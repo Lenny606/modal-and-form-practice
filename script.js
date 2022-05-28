@@ -58,6 +58,7 @@ const sendRegistration = async () => {
     } else{ console.log('failed - somthing is missing');}
     
 }
+//btn in html file has to be disabled => type = button (not submit) 
 btnRegistration.addEventListener("click", sendRegistration);
 })
 
