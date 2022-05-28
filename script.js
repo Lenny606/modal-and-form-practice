@@ -28,7 +28,7 @@ window.onclick = function(event) {
   }
 }
 
-/////////// this part handles POST a confirms if succesfull (button will be red)
+/////////// this part handles POST a confirms if succesfull (button will be red, of not alert is logged in console)
 
 
 const btnRegistration = document.querySelector(".register")
@@ -55,7 +55,7 @@ const sendRegistration = async () => {
     const myResponse = await response.json()
       if(myResponse.status === "success") {
         btn.style.backgroundColor = "red"
-    } else{ console.log('failed');}
+    } else{ console.log('failed - somthing is missing');}
     
 }
 btnRegistration.addEventListener("click", sendRegistration);
